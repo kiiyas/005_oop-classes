@@ -1,6 +1,6 @@
-import './js/bowman';
+import './js/bowerman';
 import './js/character';
-import './js/deamon';
+import './js/daemon';
 import './js/magician';
 import './js/swordsman';
 import './js/undead';
