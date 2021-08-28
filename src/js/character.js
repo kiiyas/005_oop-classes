@@ -9,7 +9,7 @@
 export default class Character {
   constructor(name, type) {
     if (typeof name !== 'string') {
-      throw new Error('The name is not a string!');
+      throw new Error('The name must be a string!');
     } else if (name.length < 2 || name.length > 10) {
       throw new Error('The name must be 2 to 10 literas!');
     }
