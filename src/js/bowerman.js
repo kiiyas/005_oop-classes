@@ -1,8 +1,8 @@
 import Character from './character';
 
-export default class Bowman extends Character {
+export default class Bowerman extends Character {
   constructor(name) {
-    super(name, 'Bowman');
+    super(name, 'Bowerman');
     this.attack = 25;
     this.defens = 25;
   }

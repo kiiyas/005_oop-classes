@@ -1,4 +1,4 @@
-import Daemon from '../deamon';
+import Daemon from '../daemon';
 
 test('Must correctly create Daemon character object', () => {
   const expected = {
