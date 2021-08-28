@@ -1,24 +1,24 @@
 import Character from '../character';
 
-test('Must correctly create an object of the base class', () => {
+test('Should correctly create a character', () => {
   const expected = {
     name: 'Test',
-    type: 'Bowman',
+    type: 'Bowerman',
     health: 100,
     level: 1,
   };
-  expect(new Character('Test', 'Bowman')).toEqual(expected);
+  expect(new Character('Test', 'Bowerman')).toEqual(expected);
 });
 
-test('if name is not a string should throw an error', () => {
-  expect(() => new Character(1, 'Bowman')).toThrowError('The name must be a string');
+test('Should throw an error if name is not a string', () => {
+  expect(() => new Character(1, 'Bowerman')).toThrowError('The name must be a string');
 });
 
-test('if the name is not between 2 and 10 characters should throw error', () => {
-  expect(() => new Character('T', 'Bowman')).toThrowError('The name must be between 2 and 10 characters!');
-  expect(() => new Character('abracadabra')).toThrowError('The name must be between 2 and 10 characters!');
+test('if the name is not 2 - 10 literas should throw error', () => {
+  expect(() => new Character('T', 'Bowerman')).toThrowError('The name must be between 2 and 10 literas!');
+  expect(() => new Character('liolio')).toThrowError('The name must be between 2 and 10 literas!');
 });
 
 test('if the character is not on the list, throws an error', () => {
-  expect(() => new Character('abracad')).toThrowError('The type must be selected from the list of suggested types!');
+  expect(() => new Character('eyeyr')).toThrowError('The type must be selected from the list!');
 });

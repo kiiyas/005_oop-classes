@@ -11,7 +11,7 @@ export default class Character {
     if (typeof name !== 'string') {
       throw new Error('The name is not a string!');
     } else if (name.length < 2 || name.length > 10) {
-      throw new Error('The name must be 2 to 10 characters!');
+      throw new Error('The name must be 2 to 10 literas!');
     }
 
     const listOfTypes = ['Bowerman', 'Swordsman', 'Magician', 'Daemon', 'Undead', 'Zombie'];
