@@ -2,7 +2,7 @@ import Character from './character';
 
 export default class Magician extends Character {
   constructor(name) {
-    super(name, 'Magician');
+    super(name, type = 'Magician');
     this.attack = 10;
     this.defens = 40;
   }
