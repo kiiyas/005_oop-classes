@@ -11,3 +11,15 @@ test('Must correctly create Daemon character object', () => {
   };
   expect(new Daemon('Test', 'Daemon')).toEqual(expected);
 });
+
+test('Must correctly create Daemon character object when in arguments there is only name', () => {
+  const expected = {
+    name: 'Test',
+    type: 'Daemon',
+    health: 100,
+    level: 1,
+    attack: 10,
+    defens: 40,
+  };
+  expect(new Daemon('Test')).toEqual(expected);
+});
